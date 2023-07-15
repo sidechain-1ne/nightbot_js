@@ -140,9 +140,9 @@ function formatTimeDiffFrags(isBirthdayToday, days, hours, minutes, seconds) {
         strFrags.push(lastFrag);
     }
 
-    const prefix = isBirthdayToday ? "Ends in " : "Begins in ";
+    const prefix = isBirthdayToday ? "Bday ends in " : "Bday begins in ";
     const middle = strFrags.length > 2 ? strFrags.join(", ") : strFrags.join(" ");
-    const suffix = isBirthdayToday ? " FeelsBirthdayMan " : "";
+    const suffix = isBirthdayToday ? " It's my bday and I'll cry if I want to " : "";
     return `${prefix}${middle}${suffix}`;
 }
 
